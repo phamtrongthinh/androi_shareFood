@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="app">Chọn Danh Mục</string>
+    <string-array name="choice_items">
+        <item>Đồ Uống</item>
+        <item>Món Thịt</item>
+        <item>Cơm</item>
+        <item>Salad</item>
+        <item>Món Cá</item>
+        <item>Món Nướng</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".user.listSearch"
+            android:exported="false" />
+        <activity
+            android:name=".user.user_listfood"
+            android:exported="false" />
+        <activity
+            android:name=".user.user_detailFood"
+            android:exported="false" />
+        <activity
+            android:name=".admin.admin_detailFood"
+            android:exported="false" />
+        <activity
+            android:name=".admin.admin_updateFood"
+            android:exported="false" />
+        <activity
+            android:name=".admin.list_food"
+            android:exported="false" />
+        <activity
+            android:name=".admin.admin_addFood"
+            android:exported="false" />
+        <activity
+            android:name=".admin.admin_updateAccount"
+            android:exported="false" />
+        <activity
+            android:name=".admin.admin_account"
+            android:exported="false" />
+        <activity
+            android:name=".user.list_nuong"
+            android:exported="false" />
+        <activity
+            android:name=".user.list_salat"
+            android:exported="false" />
+        <activity
+            android:name=".user.list_meet"
+            android:exported="false" />
+        <activity
+            android:name=".user.list_fish"
+            android:exported="false" />
+        <activity
+            android:name=".user.list_rice"
+            android:exported="false" />
+        <activity
+            android:name=".user.list_drink"
+            android:exported="false" />
+        <activity
+            android:name=".admin.main_admin"
+            android:exported="false" />
+        <activity
+            android:name=".user.main_user"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

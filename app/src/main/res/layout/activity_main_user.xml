@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    tools:context=".user.main_user">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_mainuser_acc"
+            android:layout_width="121dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/txt_mainuser_nguoidung"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:text="Người dùng : "
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/img_mainuser_logout"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Nhập tên món tìm kiếm "
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="Tìm kiếm " />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_mainuser_danhmuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Danh mục ẩm thực "
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:id="@+id/lnDrink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="openCategory"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/drink" />
+
+                <TextView
+                    android:id="@+id/txt_mainuser_drink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đồ uống"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:id="@+id/lnMeet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="openCategory"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/meat" />
+
+                <TextView
+                    android:id="@+id/txt_mainuser_meet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thịt "
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:id="@+id/lnRice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="openCategory"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/rice" />
+
+                <TextView
+                    android:id="@+id/txt_mainuser_rice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cơm "
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:id="@+id/lnSalat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="openCategory"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/salad" />
+
+                <TextView
+                    android:id="@+id/txt_mainuser_salat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Salat"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:id="@+id/lnFish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="openCategory"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/fish" />
+
+                <TextView
+                    android:id="@+id/txt_mainuser_fish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cá"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:id="@+id/lnNuong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="openCategory"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/nuong" />
+
+                <TextView
+                    android:id="@+id/txt_mainuser_Nuong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nướng"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_mainuser_hientatca"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Xem tất cả"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+</LinearLayout>
